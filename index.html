@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/100/cake.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <div class="nome-site d-block text-center">
+                <h1 class="navbar-brand m-0 section-title fs-1">ValCake</h1>
+                <h2 class="section-title m-0 fs-5 sub-title">Confeitaria</h2>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item"><a href="#sobre" class="fw-bold nav-link"><i class="bi bi-house-door me-1"></i>Sobre o restaurante</a></li>
+                    <li class="nav-item"><a href="#evento" class="fw-bold nav-link"><i class="bi bi-calendar-check me-1"></i>Eventos</a></li>
+                    <li class="nav-item"><a href="#cardapio" class="fw-bold nav-link"><i class="bi bi-card-text me-1"></i>Nosso cardápio</a></li>
+                    <li class="nav-item"><a href="#contato" class="fw-bold nav-link"><i class="bi bi-chat-left-text me-1"></i>Fale conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000"><img src="images/slides/slide1.webp" alt="Foto de cupcakes"></div>
+                    <div class="carousel-item" data-bs-interval="3000"><img src="images/slides/slide2.webp" alt="Foto de um doce folhado"></div>
+                    <div class="carousel-item" data-bs-interval="3000"><img src="images/slides/slide3.webp" alt="Foto de um bolo rodeado por cupcakes"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"><span class=" text-colored carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"><span class=" text-colored carousel-control-next-icon"></span></button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5"><img class="d-block w-100 rounded" src="images/confeitaria.webp" alt="Foto da vitrine"></div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a confeitaria</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis ipsa mollitia odit sed ullam porro possimus quam. Iste, modi dolore? Enim maiores tenetur similique doloribus illum fugiat quod modi.</p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit impedit esse voluptates qui voluptate optio nesciunt excepturi repellat nihil maxime? Perferendis ea beatae, laudantium debitis dolore sapiente sed doloribus minus!</p>
+                            <ul>
+                                <li>Item1</li>
+                                <li>Item2</li>
+                                <li>Item3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="evento" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+                <div class="row m-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/Bolo aniversário.webp" alt="Bolo de aniversário" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill "></i>
+                            Aniversários
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores, repellendus, architecto autem neque quod facere sint porro tempore sequi omnis quas nisi aspernatur temporibus beatae mollitia cupiditate quo illum?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/Bolo casamento.webp" alt="Bolo de casamento" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill "></i>
+                            Casamentos
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium sequi ducimus magnam voluptate tempora asperiores architecto laudantium eaque adipisci dolores voluptas, blanditiis provident minus sit voluptatibus? Vitae, ipsa earum!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/Bolo deburtante.webp" alt="Bolo rosa" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-stars"></i>
+                            Debutante
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias fugiat, minus unde tempore dicta corrupti corporis natus reiciendis nihil commodi quos sint mollitia neque nam libero exercitationem repudiandae totam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bolos-de-andares" class="fw-bold text-start nav-link text-colored active">Bolos de andares</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bolos-gelados" class="fw-bold text-start nav-link text-colored">Bolos gelados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#slice-cake" class="fw-bold text-start nav-link text-colored">Slice Cake</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Cupcake" class="fw-bold text-start nav-link text-colored">Cupcake</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#doces" class="fw-bold text-start nav-link text-colored">Doces finos</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bolos-de-andares">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/boloandar.webp" alt="FOto de Bolo y">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/boloandar.webp" alt="Foto de suco">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/boloandar.webp" alt="FOto de Bolo y">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/boloandar.webp" alt="Foto de Bolo x">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/boloandar.webp" alt="FOto de Bolo y">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/boloandar.webp" alt="Foto de Bolo x">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bolos-gelados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bolo gelado.webp" alt="Bolo Gelado x">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Gelado x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bolo gelado2.webp" alt="Bolo Gelado y">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Gelado y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bolo gelado.webp" alt="Bolo Gelado x">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Gelado x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bolo gelado2.webp" alt="Bolo Gelado y">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Gelado y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bolo gelado.webp" alt="Bolo Gelado x">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Gelado x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bolo gelado2.webp" alt="Bolo Gelado y">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo Gelado y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="slice-cake">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/SliceCake.webp" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/SliceCake.webp" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/SliceCake.webp" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/SliceCake.webp" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/SliceCake.webp" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/SliceCake.webp" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Cupcake">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/Cupcake.webp" alt="Cupcake x">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/Cupcake.webp" alt="Cupcake y">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/Cupcake.webp" alt="Cupcake x">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/Cupcake.webp" alt="Cupcake y">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/Cupcake.webp" alt="Cupcake x">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake x</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/Cupcake.webp" alt="Cupcake y">
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake y</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="doces">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/brigadeiro.webp" alt="Brigadeiro">
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/beijinho.webp" alt="Beijinho">
+                                        <h5 class="text-colored fw-bold mt-2">Beijinho</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/brigadeiro.webp" alt="Brigadeiro">
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/beijinho.webp" alt="Beijinho">
+                                        <h5 class="text-colored fw-bold mt-2">Beijinho</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/brigadeiro.webp" alt="Brigadeiro">
+                                        <h5 class="text-colored fw-bold mt-2">Brigadeiro</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/beijinho.webp" alt="Beijinho">
+                                        <h5 class="text-colored fw-bold mt-2">Beijinho</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="Nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" class="form-control" name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" class="form-control"  name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu Telefone (opcional)</label>
+                                <input type="tel" class="form-control" name="telefone" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <input type="text" class="form-control" name="mensagem">
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="https://www.instagram.com" target="_blank">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://www.whatsapp.com" target="_blank">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo n&ordm;123, Bairro HTML - Bootsteap - CSS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
